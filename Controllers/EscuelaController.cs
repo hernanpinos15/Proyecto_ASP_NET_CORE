@@ -12,6 +12,10 @@ namespace Proyecto_ASP_NET_CORE.Controllers
             escuela.AñoDeCreacion = 2018;
             escuela.UniqueId = Guid.NewGuid().ToString();
             escuela.Nombre = "Mau School";
+            escuela.Pais = "Ecuador";
+            escuela.Ciudad = "Riobamba";
+            escuela.Dirección = "Mi casa";
+            escuela.TipoEscuela = TiposEscuela.Secundaria;
             ViewBag.CosaDinamica = "Ejemplo";
             return View(escuela);
         }
