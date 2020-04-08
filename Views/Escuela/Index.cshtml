@@ -1,0 +1,14 @@
+﻿@Model Escuela
+
+@{
+    ViewData["Title"] = "La Información de la Escuela";
+    Layout = "Simple";
+}
+
+<h1>Escuela @ViewData["Title"]</h1>
+<h2>Nombre: @Model.Nombre </h2>
+<p><strong>Año de fundación: @Model.AñoDeCreacion</strong></p>
+
+<p><i>@ViewBag.CosaDinamica</i></p>
+<p><i>@ViewData["CosaDinamica"]</i></p>
+
